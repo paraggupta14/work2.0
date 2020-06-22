@@ -64,6 +64,12 @@ Version      : 1.0
 	url(../fonts/MaterialIcons-Regular.woff) format('woff'),
 	url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
+
+.div2hide 
+	  {                    /* this will hide all divs on the page */
+		display:none;
+	  }
+
 .material-icons {
 	font-family: 'Material Icons';
 	font-weight: normal;

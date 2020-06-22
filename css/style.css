@@ -12,6 +12,11 @@ body a{
 	-ms-transition:0.5s all;
 }
 
+.div2hide 
+	  {                    /* this will hide all divs on the page */
+		display:none;
+	  }
+
 html { 
 	background: url(../images/sample.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -12930,3 +12935,4 @@ Primary style
 	  stroke-dasharray: 89, 200;
 	  stroke-dashoffset: -136px; } }
   
+	  
