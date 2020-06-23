@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/gif/png" href="img/leftimage-dark.jpg">
+    <title>Daria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Template CSS Files -->
+    <link type="text/css" media="all" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/jquery.animatedheadline.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/style.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/skins/blue.css" rel="stylesheet">
+    <link type="text/css" media="all" href="http://slimhamdi.net/istanbul/demos/css/skins/blue.css" rel="stylesheet">
+    
+    
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/jquery.animatedheadline.css">
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/jquery.animatedheadline.js"></script>
+    <!-- Template JS Files -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Live Style Switcher - demo only -->
+	<link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" disabled="">
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldrenrod.css" disabled="">
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" disabled="">
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" disabled="">
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" disabled="">
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" disabled="">
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" disabled="">
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" disabled="">
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css">
+
+<style>
+
+.bg-img  {
+    
+    background-color: #222;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+div.container.page-title {
+    padding: 60px 0 54px;
+    position: relative;
+}
+.page-title h2 {
+    font-size: 55px;
+    position: relative;
+    z-index: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.page-title h2 span
+{
+  color: #2196F3;
+}
+
+.page-title .title-head-subtitle::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: -50px;
+    top: 11px;
+    width: 30px;
+}
+
+.page-title .title-head-subtitle::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    right: -50px;
+    top: 11px;
+    width: 30px;
+}
+
+.page-title .title-head-subtitle {
+    color: #fff;
+    opacity: .8;
+}
+
+.page-title .title-head-subtitle {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    margin: 20px 0 0;
+    opacity: .8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.custom-list li:not(:last-child) {
+    padding-bottom: 25px;
+}
+
+.custom-list li {
+    position: relative;
+}
+
+.contact-container .contact .leftside {
+    font-size: 16px;
+}
+
+h6, body.dark .title-section {
+    color: #fff;
+}
+
+.custom-list li span.contact-title {
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: .8;
+}
+
+
+.fa{
+    color: #2196f3;
+    font-size: large;
+
+}
+
+
+.contact-content {
+    padding: 0px 0px 0px 20px;
+    font-size: initial;
+}
+
+.social h6 {
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: .8;
+
+}
+
+ul.social-intro {
+    margin: 0;
+    display: inline-block;
+}
+.p-none {
+    padding: 0 !important;
+}
+
+/* .social-intro li:not(:last-child) {
+    margin-right: 15px;
+} */
+
+.social-intro li {
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.contact-container .contact .leftside {
+    font-size: 16px;
+}
+
+.contact-container ul.social-intro li a, .btn.btn-secondary, .btn.btn-secondary:focus, .chart-bar > .percent{
+    border: 1px solid #2196F3;
+        border-top-color: rgb(33, 150, 243);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(33, 150, 243);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(33, 150, 243);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(33, 150, 243);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+
+}
+
+ul.social-intro li a {
+    width: 35px;
+    height: 35px;
+    display: block;
+    line-height: 36px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    transition: 0.3s;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+    .social li
+    {
+    padding: 0px 6px;
+
+}
+
+
+.contact-container .contact .rightside form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+body.dark .comments-form .form-group i, body.dark .contact-container .contact .rightside form .form-group i, body.dark .main-text h3, body.light.dark-header .main-text h3, body.dark p, body.light.dark-header .main-text p, body.dark .personal-info ul li, body.dark .contact-container .contact .leftside, body.dark .navigation a {
+    color: #eee;
+}
+
+.contact-container .contact .rightside form .form-group i {
+    position: absolute;
+    left: 36px;
+    top: 15px;
+    font-size: 16px;
+    opacity: .3;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control{
+    background: #333;
+border: 1px solid #444;
+color: #fff; background: #333;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.contact-container .contact .rightside form .form-group input[type="text"], .contact-container .contact .rightside form .form-group input[type="email"] {
+	height: 46px;
+	padding-left: 49px;
+}
+
+.contact-container .contact .rightside form .form-group input[type="text"], .contact-container .contact .rightside form .form-group input[type="email"], .contact-container .contact .rightside form .form-group textarea {
+    border-radius: 30px;
+    outline: none;
+    box-shadow: none !important;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+        padding-left: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.inputall{
+background-color:#333 !important;
+border:1px solid #444;
+color:#fff !important;
+}
+
+.contact-container .contact .rightside .form-group textarea {
+	height: 130px !important;
+	padding: 12px 0 15px 49px;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+body{
+
+    font-family: sans-serif;
+}
+
+.chart-bar > .item-progress, .navigation li > div a span::after, .cd-stretchy-nav ul a::before, .nav-container > div > ul li:not(:last-child):hover::after, body.dark .nav-container > div > ul li:not(:last-child):hover::after, .nav-container > div > ul li.active:not(:last-child)::after, body.dark .nav-container > div > ul li.active:not(:last-child)::after, .contact-container ul.social-intro li a:hover, .carousel-controls, body.dark .carousel-controls, .resume-items .item a, #progress-line-container, #header > div.bg, .ah-headline.clip .ah-words-wrapper::after, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .btn.btn-secondary::before, section#blog .post-date, .resume-items .item-label, .btn, .comments-form button, .comments-form button:hover, .comments-form button:focus, .comments-form button:active, .back-mobile, .page-title .title-head-subtitle::before, .page-title .title-head-subtitle::after {
+	background-color: #2196F3;
+}
+
+.btn:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+
+.btn::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	height: 102%;
+	left: -25%;
+	width: 0%;
+	background-color: #555;
+	transform: skew(-22deg);
+	transition-duration: .6s;
+	z-index: 1;
+}
+
+.btn {
+	box-shadow: none !important;
+	border-radius: 26px;
+	font-weight: 500;
+	height: 46px;
+	line-height: 46px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 33px;
+	outline: none !important;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: .5px;
+	border: 0;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* .form-control {
+    height: 52px !important;
+    background: #fff !important;
+        background-color: rgb(255, 255, 255);
+    color: #e6d7d7 !important;
+    font-size: 18px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+} */
+
+.form-control:focus {
+
+border-color: #333;
+
+box-shadow: #444;
+
+}
+
+</style>
+
+
+</head>
+
+<body class="dark bgimage">
+    <div class="bg-img"></div>
+    <div class="page animated" style="animation-duration: 500ms;">
+        <!-- Live Style Switcher Starts - demo only -->
+     
+        <!-- Live Style Switcher Ends - demo only -->
+        <!-- Header Starts -->
+    <header id="header">
+		<div class="nav-container">
+			<div>
+				<!-- Mobile Navigation Starts -->
+				<ul id="nav" class="navigation">
+					<li class="">
+						<div>
+							<a id="link-home" href="/index.html" class="active">
+								<i class="fa fa-home"></i><span>Home</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a id="link-about" href="/About.html">
+								<i class="fa fa-user"></i><span>About me</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a id="link-work" href="/About.html">
+								<i class="fa fa-briefcase"></i><span>my Portfolio</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a id="link-contact" href="/contact.html">
+								<i class="fa fa-envelope-open"></i><span>get in touch</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a id="link-blog" href="/contact.html">
+								<i class="fa fa-comments"></i><span>my Blog</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<!-- Mobile Navigation Ends -->
+			</div>
+		</div>
+		<!-- Stretchy Navigation Starts -->
+		<div class="cd-stretchy-nav">
+			<a class="cd-nav-trigger" href="#0">
+				<span aria-hidden="true"></span>
+			</a>
+			<ul class="stretchy-nav">
+				<li class=""><a href="#home"><span>Home</span></a></li>
+				<li class=""><a href="#about"><span>About</span></a></li>
+				<li><a href="#works"><span>Portfolio</span></a></li>
+				<li class="active"><a href="#contact"><span>Contact</span></a></li>
+				<li><a href="#blog"><span>Blog</span></a></li>
+			</ul>
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</div>
+		<!-- Stretchy Navigation Ends -->
+    </header>
+    <!-- Header Ends -->
+        <!-- Main Content Starts -->
+        <main id="main">
+            <!-- Back To Home Starts [ONLY MOBILE] -->
+            <section id="contact" class="active">
+                <div class="contact-container">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title text-center">
+                        <h2 class="text-center">get <span>in touch</span></h2>
+						<span class="title-head-subtitle" style="padding: 1px 0 0 0;line-height: 21px;">I’m always open to discussing product design work or partnerships.</span>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container">
+                        <div class="row contact">
+                            <!-- Contact Infos Starts -->
+                            <div class="col-12 col-md-4 col-xl-4 leftside">
+                                <ul class="custom-list">
+                                    <li>
+                                        <h6 class="font-weight-600"> <span class="contact-title">Phone</span><i class="fa fa-whatsapp"></i><span class="contact-content">+216 21 184 010</span></h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="font-weight-600"> <span class="contact-title">email</span><i class="fa fa-envelope-o fs-14"></i><span class="contact-content">info@daria.ua</span></h6>
+
+                                    </li>
+                                    <li>
+                                        <h6 class="font-weight-600"><span class="contact-title">instagram</span><i class="fa fa-instagram"></i><span class="contact-content">daria.198</span></h6>
+
+                                    </li>
+                                    <li>
+                                        <h6 class="font-weight-600"><span class="contact-title">Dribbble </span><i class="fa fa-dribbble"></i><span class="contact-content">daria.dribble</span></h6>
+                                    </li>
+                                </ul>
+
+                                <!-- Social Media Profiles Starts -->
+<br>
+
+                                <div class="social">
+                                    <h6 class="font-weight-600 uppercase">Social Profiles</h6>
+                                    <ul class="list-inline social social-intro text-center p-none">
+                                        <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="youtube"><a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li class="dribbble"><a title="Dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Social Media Profiles Ends -->
+                            </div>
+                            <!-- Contact Infos Ends -->
+                            <!-- Contact Form Starts -->
+                            <div class="col-12 col-md-8 col-xl-8 rightside">
+                                <p style="line-height: 2;">
+                                    If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.
+                                </p>
+                                <br>
+                                <form class="contactform" method="post" action="php/process-form.php">
+                                    <div class="row">
+                                        <!-- Name Field Starts -->
+                                        <div class="form-group col-xl-6"> <i class="fa fa-user prefix"></i>
+                                            <input id="name" name="name" type="text" class="form-control inputall" placeholder="YOUR NAME" required="">
+                                        </div>
+                                        <!-- Name Field Ends -->
+                                        <!-- Email Field Starts -->
+                                        <div class="form-group col-xl-6"> <i class="fa fa-envelope prefix"></i>
+                                            <input id="email" type="email" name="email" class="form-control inputall" placeholder="YOUR EMAIL" required="">
+                                        </div>
+                                        <!-- Email Field Ends -->
+                                        <!-- Comment Textarea Starts -->
+                                        <div class="form-group col-xl-12"> <i class="fa fa-comments prefix"></i>
+                                            <textarea id="comment" name="comment" class="form-control inputall" placeholder="YOUR MESSAGE" required=""></textarea>
+                                        </div>
+                                        <!-- Comment Textarea Ends -->
+                                    </div>
+                                    <!-- Submit Form Button Starts -->
+                                    <div class="submit-form">
+                                        <button class="btn-lg button1 hvr-shutter-in-vertical" type="submit" name="send"><span><i class="fa fa-send"></i> Send Message</span></button>
+                                    </div>
+                                    <!-- Submit Form Button Ends -->
+                                    <div class="form-message"> <span class="output_message text-center font-weight-600 uppercase"></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Contact Form Ends -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog Section Ends -->
+        </main>
+    </div>
+    <!-- Main Content Ends -->
+    <!-- Preloader Starts -->
+    <div class="preloader loaded">
+        <div class="preloader-container">
+            <h1>daria</h1>
+            <div id="progress-line-container">
+                <div class="progress-line"></div>
+            </div>
+            <h1>taylor</h1>
+        </div>
+    </div>
+    <!-- Preloader Ends -->
+
+    <!-- Template JS Files -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.animatedheadline.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/transition.js"></script>
+    <!-- Live Style Switcher JS File - only demo -->
+    <script src="js/styleswitcher.js"></script>
+    <!-- Main JS Initialization File -->
+    <script src="js/custom.js"></script>
+
+
+</body></html>
