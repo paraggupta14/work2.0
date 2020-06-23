@@ -6035,7 +6035,7 @@ Primary style
 	  .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
 		color: #fff; }
   
-  .card {
+  /* .card {
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -6049,7 +6049,7 @@ Primary style
 	background-color: #fff;
 	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, 0.125);
-	border-radius: 0.25rem; }
+	border-radius: 0.25rem; } */
 	.card > hr {
 	  margin-right: 0;
 	  margin-left: 0; }
@@ -10995,7 +10995,7 @@ Primary style
 	background: #f8f9fa !important; }
   
   .bg-primary {
-	background: #dbcc8f; }
+	background: #2196F3; }
   
   .btn {
 	font-size: 12px;
@@ -11010,15 +11010,15 @@ Primary style
 	.btn:hover, .btn:active, .btn:focus {
 	  outline: none; }
 	.btn.btn-primary {
-	  background: #dbcc8f;
-	  border: 1px solid #dbcc8f;
+	  background: #2196F3;
+	  border: 1px solid #2196F3;
 	  color: #fff; }
 	  .btn.btn-primary:hover {
-		border: 1px solid #dbcc8f;
+		border: 1px solid #2196F3;  
 		background: transparent;
-		color: #dbcc8f; }
+		color: white; }
 	  .btn.btn-primary.btn-outline-primary {
-		border: 1px solid #dbcc8f;
+		border: 1px solid #2196F3;
 		background: transparent;
 		color: #dbcc8f; }
 		.btn.btn-primary.btn-outline-primary:hover {
